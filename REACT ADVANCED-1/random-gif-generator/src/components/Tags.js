@@ -34,7 +34,8 @@ const Tags = () => {
     //     fetchData();
     // }, [])
 
-    const { gif, loading, fetchData } = useGif(tag);
+    const { gif, loading, fetchData } = useGif(tag);  // Tags passing
+
 
     return (
         <div className='w-1/2  bg-blue-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px]'>
