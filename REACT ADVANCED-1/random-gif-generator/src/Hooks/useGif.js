@@ -12,7 +12,7 @@ const useGif = (tag) => {
     const [gif, setGif] = useState('');
     const [loading, setLoading] = useState(false);
 
-    async function fetchData() {
+    async function fetchData(tag) {
 
         setLoading(true);
         // const output = await axios.get(url); //returns a promise object
@@ -28,7 +28,7 @@ const useGif = (tag) => {
     }
 
     useEffect(() => {
-        fetchData();
+        fetchData(tag);
     }, [])
 
     return { gif, loading, fetchData }
