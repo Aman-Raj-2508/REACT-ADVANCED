@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import { baseUrl } from "../baseUrl";
 
 
-//Step-1
+// Step-1
 export const AppContext = createContext();
 
 
