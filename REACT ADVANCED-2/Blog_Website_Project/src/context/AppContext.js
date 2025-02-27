@@ -15,7 +15,7 @@ export default function AppContextProvider({ children }) {
 
     // Step-4 data filling
 
-    async function fetchBlogPosts(page = 1) {
+    async function fetchBlogPosts(page) {
         setLoading(true);
 
         let url = `${baseUrl}?page=${page}`;
