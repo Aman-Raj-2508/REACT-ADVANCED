@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart } = useSelector((state) => state);
+  console.log("Printing Cart");
+  console.log(cart);
   const [totalAmout, setTotalAmount] = useState(0);
+
   useEffect(() => {
     setTotalAmount(cart.reduce((acc, curr) => acc + curr.price, 0));
   }, [cart])
